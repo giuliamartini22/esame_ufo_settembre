@@ -132,7 +132,6 @@ class DAO():
                         from sighting s, state st1, state st2, neighbor n 
                         where st1.Lat > %s
                         and st1.Lng > %s
-                        and (s.state = st1.id or s.state = st2.id )
                         and st2.Lat > %s
                         and st2.Lng > %s
                         and s.state = st2.id 
